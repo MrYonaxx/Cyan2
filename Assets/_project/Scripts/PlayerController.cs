@@ -5,29 +5,47 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
+    bool canPlay = true;
+    [SerializeField]
     Transform pivotCamera;
     [SerializeField]
     Camera camera;
     [SerializeField]
     CharacterController characterController;
     [SerializeField]
+    AudioSource audioSourcePas;
+
+    [Space]
+    [Header("Parameter")]
+    [SerializeField]
     float speed = 2;
     [SerializeField]
     float gravity = 2;
     [SerializeField]
     float sensitivity = 2;
+    [SerializeField]
+    float footStepThreshold = 100;
 
     float speedX = 0;
     float speedZ = 0;
     float currentRotationX = 0;
+    float footStepCount = 0;
 
 
 
     // Update is called once per frame
     void Update()
     {
-        CheckPlayerInputCamera();
-        Move();
+        if (canPlay == true)
+        {
+            CheckPlayerInputCamera();
+            Move();
+        }
+    }
+
+    public void SetCanPlay(bool b)
+    {
+        canPlay = b;
     }
 
     public void Move()
@@ -62,6 +80,16 @@ public class PlayerController : MonoBehaviour
         //rigidbodyCharacter.velocity = move * defaultSpeed * Time.deltaTime;
         characterController.Move(move * Time.deltaTime);
         characterController.Move(new Vector3(0, gravity * Time.deltaTime, 0));
+        if(characterController.isGrounded)
+        {
+            footStepCount += move.magnitude * Time.deltaTime;
+            if(footStepCount >= footStepThreshold)
+            {
+                footStepCount = 0;
+                audioSourcePas.pitch = Random.Range(1, 1.2f);
+                audioSourcePas.Play();
+            }
+        }
     }
 
     public void CheckPlayerInputCamera()
