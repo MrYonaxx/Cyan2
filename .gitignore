@@ -102,3 +102,7 @@ Temp/
 
 .collabignore
 Cyan2.sln
+
+Assembly-CSharp-Editor.csproj
+
+Assets/_TerrainAutoUpgrade/
