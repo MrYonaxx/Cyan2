@@ -11,10 +11,6 @@ public class PlayerCamera : MonoBehaviour
     IEnumerator fovCoroutine;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     public void ChangeFOV(float targetFOV)
     {
