@@ -7,6 +7,7 @@ obj/
 
 Assembly-CSharp.csproj
 
+<<<<<<< HEAD
 Cyan.sln
 Temp/UnityTempFile-d71136efa2c1b6443bbc905fd5b6dbbb
 Temp/UnityTempFile-ec8bf6816c29df54eb9f1460c8f5959c
@@ -91,8 +92,13 @@ Temp/UnityTempFile-f8f9e21c6d73df3489b9a1843b23ea53
 Temp/UnityTempFile-fa26c06e999ee1c4db78eb9f5d6267df
 Temp/ProcessJobs/1bf8f35e0f1741ea02e4b25bd4aae318.lt
 Assets/PackageGaetan
+=======
+
+
+>>>>>>> ea0cf08e8e3248329890c9115888f218ccaffe55
 Temp/
 
 .vs/
 
 .collabignore
+Cyan2.sln
