@@ -24,6 +24,7 @@ public class DoorButton : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Player"))
             {
+                DisplayerSubtitle.Instance.DisplaySubtitle(0, 10);
                 if (!isActived)
                 {
                     // Debug.Log("WESH");

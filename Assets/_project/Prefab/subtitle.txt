@@ -1,0 +1,5 @@
+"Lisa," said Kyle, "I need help moving this box of toys for the garage sale. Will you help me?";2
+"Sure!" Lisa put her book down and moved to lift one end of the box for her brother. She glanced down into the box. "Hey!" she exclaimed. "You can't give away your Harry Potter collection!";3
+"Well, I am not taking them to college with me." Kyle smiled at his little sister. "Do you want them?";2
+"Yes!" Lisa smiled back. "I will read them all again, and it will remind me of how we used to pretend to be Harry and Hermione.";3
+"They are yours, Squirt." As Kyle smiled as his sister, he realized how much things would change in the next few days.;2
