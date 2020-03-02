@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
             if(footStepCount >= footStepThreshold)
             {
                 footStepCount = 0;
-                audioSourcePas.pitch = Random.Range(1, 1.2f);
+                audioSourcePas.pitch = Random.Range(0.5f, 1.5f);
                 audioSourcePas.Play();
             }
         }
