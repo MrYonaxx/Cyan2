@@ -14,7 +14,7 @@ public class LookAtPlayer : MonoBehaviour
         if (creepyShake == false)
         {
             this.transform.localRotation = Quaternion.LookRotation(player.position - this.transform.position, Vector3.up);
-            this.transform.localEulerAngles = new Vector3(-this.transform.localEulerAngles.x, this.transform.localEulerAngles.y, this.transform.localEulerAngles.z);
+            this.transform.localEulerAngles = new Vector3(-this.transform.localEulerAngles.x, -this.transform.localEulerAngles.y - 90, this.transform.localEulerAngles.z);
         }
         else
             this.transform.localEulerAngles = new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
