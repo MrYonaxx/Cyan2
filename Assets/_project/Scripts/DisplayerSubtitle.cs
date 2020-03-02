@@ -19,8 +19,6 @@ public class DisplayerSubtitle : MonoBehaviour
     private void Start()
     {
         Instance = Instance ?? this;
-       
-
     }
 
 
