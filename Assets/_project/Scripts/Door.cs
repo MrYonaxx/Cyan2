@@ -56,7 +56,8 @@ public class Door : MonoBehaviour
             {
                 if (isLocked == true)
                 {
-                    UIManager.Instance.DrawInteraction("Fermé");
+                    UIManager.Instance.DrawInteraction("Locked");
+                    AudioSource.PlayOneShot(AudioClipClose);
                 }
                 else
                 {

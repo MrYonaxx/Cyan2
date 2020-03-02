@@ -157,5 +157,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 072dc81b50e68f845bcd3b1328011444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorButton: {fileID: 0}
+  isOpen: 0
+  isLocked: 0
+  interactionName: '[E] - Open'
+  animatorBoolName: IsOpen
   AnimationOpen: {fileID: 4112847853166263867}
+  AudioSource: {fileID: 0}
+  AudioClipOpen: {fileID: 0}
+  AudioClipClose: {fileID: 0}
